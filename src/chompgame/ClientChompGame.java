@@ -361,6 +361,7 @@ public class ClientChompGame extends javax.swing.JFrame {
                     }
                     if(bt == jButton18) {
                         JOptionPane.showMessageDialog(this, "Kaybettiniz!!", "Oyun Bitti", JOptionPane.ERROR_MESSAGE);
+                        jLabel3.setVisible(false);
                     }
                     break;
                 }
@@ -368,7 +369,7 @@ public class ClientChompGame extends javax.swing.JFrame {
         }
         
         jLabel3.setText("Sıra Onda");
-        jLabel3.setVisible(false);
+        
     }//GEN-LAST:event_commonButtonAction
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
@@ -413,6 +414,7 @@ public class ClientChompGame extends javax.swing.JFrame {
                         JDialog dialog = pane.createDialog("Oyun Bitti");
                         dialog.setLocation(230, 110);
                         dialog.setVisible(true);
+                        jLabel3.setVisible(false);
                     }
                     break;
                 }
@@ -420,7 +422,7 @@ public class ClientChompGame extends javax.swing.JFrame {
         }
         
         jLabel3.setText("Sıra Sizde");
-        jLabel3.setVisible(false);
+        
     }
     
     public class ServerListenThread extends Thread {
